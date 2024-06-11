@@ -5,6 +5,7 @@ export function useAdvice () {
   const [error, setError] = useState(null)
 
   const getAdvice = useCallback(async () => {
+    setAdvice('')
     setLoading(true)
     setError(null)
     try {
