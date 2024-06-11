@@ -1,8 +1,16 @@
+import Dice from './assets/Icons/Dice'
+import PatternDividerDesktop from './assets/Icons/PatternDividerDesktop'
+
 function App () {
   return (
-    <>
-      <h1 className='text-red-400'>Vite + React</h1>
-    </>
+    <div className='bg-dark-grayish-blue rounded-2xl p-12 max-w-[540px] text-center mx-auto relative'>
+      <h1 className='font-manrope text-[13px] font-extrabold text-red-400 text-neon-green tracking-[4.9px] mb-6'>ADVICE #177</h1>
+      <p className='font-manrope font-extrabold text-[28px] tracking-[-0.3px] text-light-cyan mb-10'>“It is easy to sit up and take notice, what's difficult is getting up and taking action.”</p>
+      <PatternDividerDesktop className='mb-6' />
+      <button className='flex justify-center items-center size-16 rounded-full bg-neon-green absolute bottom-[-25px] left-[50%] transform -translate-x-1/2 cursor-pointer hover:shadow-neon-green transition-all duration-200 ease-in-out'>
+        <Dice />
+      </button>
+    </div>
   )
 }
 
