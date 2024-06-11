@@ -1,10 +1,28 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 export function useAdvice () {
   const [advice, setAdvice] = useState('')
-  useEffect(() => {
-    fetch('https://api.adviceslip.com/advice')
-      .then(res => res.json())
-      .then(setAdvice)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
+
+  const getAdvice = useCallback(async () => {
+    setLoading(true)
+    setError(null)
+    try {
+      const res = await fetch('https://api.adviceslip.com/advice')
+      if (!res.ok) {
+        throw new Error('Network response was not ok.')
+      }
+      const data = await res.json()
+      setAdvice(data)
+    } catch (error) {
+      setError(error)
+    } finally {
+      setLoading(false)
+    }
   }, [])
-  return { advice }
+
+  useEffect(() => {
+    getAdvice()
+  }, [])
+  return { advice, loading, error, getAdvice }
 }
