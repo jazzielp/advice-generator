@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Web](https://jazzielp.github.io/advice-generator/)
+- Live Site URL: [Github](https://github.com/jazzielp/advice-generator/)
 
 ## My process
 
@@ -44,7 +44,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Porfolio](https://jazziel.dev/)
+- Frontend Mentor - [@jazzielp](https://www.frontendmentor.io/profile/jazzielp)
+- Twitter - [@hpuente06](https://www.twitter.com/hpuente06)
 
